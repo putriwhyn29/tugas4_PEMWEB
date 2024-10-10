@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas pemweb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <h1>Uniqueness of orcas!</h1>
+            <p>Temukan dunia orca yang megah, predator puncak yang cerdas di lautan. Dengan pola hitam dan putih yang mencolok, mereka dikenal karena struktur sosial yang kompleks dan keterampilan komunikasi yang luar biasa.</p>
+            <img src="download (3).jpeg" class="featured-image">
+            <button onclick="scrollToSection('about')">Pelajari Lebih Lanjut Tentang Orca</button>
+        </section>
+
+        <section id="about" class="page">
+            <h1>Tentang Orca</h1>
+            <p>Orca adalah salah satu makhluk laut yang paling menarik. Berikut adalah beberapa karakteristik menakjubkan:</p>
+            
+            <div class="about-content">
+                <h2>Penampilan</h2>
+                <ul>
+                    <li><strong>Warna dan Ukuran:</strong> Pola hitam dan putih yang mencolok, mencapai panjang hingga 9 meter (30 kaki).</li>
+                    <li><strong>Sirip Punggung:</strong> Jantan memiliki sirip punggung yang tinggi, sementara betina memiliki sirip yang lebih pendek dan melengkung.</li>
+                </ul>
+                <img src="The Times and The Sunday Times on X.jpeg" alt="Gambar Orca" class="about-image">
+                
+                <h2>Struktur Sosial</h2>
+                <ul>
+                    <li><strong>Pod Keluarga:</strong> Orca hidup dalam kelompok sosial yang erat.</li>
+                    <li><strong>Komunikasi:</strong> Mereka menggunakan berbagai suara dan klik, setiap pod memiliki dialeknya sendiri.</li>
+                    <li><strong>Kecerdasan:</strong> Dikenal cerdas, mampu menyelesaikan masalah dan menunjukkan perilaku sosial.</li>
+                </ul>
+                <img src="berkelompok.jpeg" alt="Gambar Orca dalam kelompok" class="about-image">
+            </div>
+            
+            <button onclick="scrollToSection('contact')">Kontak Kami</button>
+        </section>
+        
+
+        <section id="contact" class="page">
+            <h1>Kontak Kami</h1>
+            <p>Kami ingin mendengar dari Anda! Silakan hubungi kami dengan pertanyaan apa pun.</p>
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" placeholder="Pesan Anda" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Keunikan Orca. Semua hak dilindungi.</p>
+        <p>Ikuti kami di:</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p>Untuk informasi lebih lanjut, silakan kirim email ke: <a href="mailto:info@keunikanorca.com">putriwahyuni269@upi.edu</a></p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

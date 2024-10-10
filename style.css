@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #6c8ea5, #929fe9);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.page {
+    display: none;
+    padding: 20px;
+    text-align: center; 
+    max-width: 800px; 
+}
+
+.page.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.featured-image {
+    width: 80%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 15px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 15px rgb(243, 241, 109); 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); 
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%; 
+    max-width: 300px; 
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #edf05d;
+}
+
+form button:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.about-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: left; 
+    padding: 20px; 
+    border: 1px solid #fff; 
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.about-image {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin: 20px 0; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+h2 {
+    margin: 20px 0 10px 0;
+}
